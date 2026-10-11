@@ -1,4 +1,3 @@
-<!-- File 2: admin.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -61,7 +60,7 @@
                         <i id="preview-icon" class="fa-solid fa-user text-3xl text-slate-600"></i>
                     </div>
                     <div class="flex-1">
-                        <label class="block text-xs font-bold text-slate-400 uppercase mb-2">Unggah Foto Baru (JPG/PNG)</label>
+                        <label class="block text-xs font-bold text-slate-400 uppercase mb-2">Unggah Foto Baru (Format Terkompresi < 500KB)</label>
                         <input type="file" id="input-photo-file" accept="image/*" class="w-full text-sm text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-cyan-500 file:text-slate-950 hover:file:bg-cyan-400 cursor-pointer">
                     </div>
                 </div>
@@ -84,8 +83,31 @@
     <script>
         let currentPhotoBase64 = "";
 
+        const defaultDataValues = {
+            name: "Musliadi",
+            title: "Senior Analyst - QA Data Support & System Improvement",
+            tagline: "Profesional Teknik Informatika dengan pengalaman sejak 2017 di bidang operasional keuangan mikro, quality assurance, dan analisis data menggunakan SQL, Superset, Python, dan Pandas.",
+            about: "Memiliki keahlian mendalam dalam manajemen kualitas data, deteksi anomali, otomatisasi laporan, serta pengembangan operasional keuangan mikro. Berbasis di Makassar, Indonesia, dengan rekam jejak kepemimpinan regional di berbagai perusahaan pembiayaan terkemuka.",
+            email: "musliadi@example.com",
+            linkedin: "https://linkedin.com/in/musliadi",
+            photo: "",
+            experiences: [
+                { role: "QA Data Support & System Improvement — Senior Analyst", company: "PT Amartha Mikro Fintek", period: "2024 – Sekarang", desc: "Mengelola kualitas data, analisis anomali, serta peningkatan sistem pendukung operasional." },
+                { role: "QA Field — Senior Analyst", company: "PT Amartha Mikro Fintek", period: "2022 – 2024", desc: "Melakukan quality assurance operasional lapangan mencakup regional Sulawesi Tengah dan Sulawesi Utara." },
+                { role: "Regional Manager", company: "PT Bina Artha Ventura", period: "2020 – 2021", desc: "Memimpin operasional regional perusahaan pembiayaan mikro." },
+                { role: "Area Manager", company: "PT Bina Artha Ventura", period: "2019 – 2020", desc: "Mengawasi area Palu dan sekitarnya." },
+                { role: "Branch Manager — Officer Development Program", company: "PT Bina Artha Ventura", period: "2017 – 2019", desc: "Bertugas di Makassar dan Poso melalui program pengembangan kepemimpinan." }
+            ],
+            skills: ["SQL", "Superset", "Python", "Pandas", "Google Sheets", "AppSheet", "Google Apps Script", "Quality Assurance", "Data Analysis", "Microfinance Operations"],
+            portfolios: [
+                { title: "Dashboard Superset QA & Operasional", desc: "Membuat dashboard pemantauan anomali data dan performa lapangan secara real-time.", link: "#" },
+                { title: "Automasi Laporan Python & Pandas", desc: "Skrip otomatisasi pengolahan data laporan harian untuk efisiensi tim analitik.", link: "#" },
+                { title: "Sistem AppSheet Keuangan Mikro", desc: "Aplikasi pendukung operasional lapangan berbasis Google Workspace dan AppSheet.", link: "#" }
+            ]
+        };
+
         function initAdmin() {
-            const data = JSON.parse(localStorage.getItem('portfolioData')) || defaultDataValues();
+            const data = JSON.parse(localStorage.getItem('portfolioData')) || defaultDataValues;
             
             document.getElementById('input-name').value = data.name;
             document.getElementById('input-email').value = data.email;
@@ -97,31 +119,6 @@
 
             currentPhotoBase64 = data.photo || "";
             updatePhotoPreview();
-        }
-
-        function defaultDataValues() {
-            return {
-                name: "Musliadi",
-                title: "Senior Analyst - QA Data Support & System Improvement",
-                tagline: "Profesional Teknik Informatika dengan pengalaman sejak 2017 di bidang operasional keuangan mikro, quality assurance, dan analisis data menggunakan SQL, Superset, Python, dan Pandas.",
-                about: "Memiliki keahlian mendalam dalam manajemen kualitas data, deteksi anomali, otomatisasi laporan, serta pengembangan operasional keuangan mikro. Berbasis di Makassar, Indonesia, dengan rekam jejak kepemimpinan regional di berbagai perusahaan pembiayaan terkemuka.",
-                email: "musliadi@example.com",
-                linkedin: "https://linkedin.com/in/musliadi",
-                photo: "",
-                experiences: [
-                    { role: "QA Data Support & System Improvement — Senior Analyst", company: "PT Amartha Mikro Fintek", period: "2024 – Sekarang", desc: "Mengelola kualitas data, analisis anomali, serta peningkatan sistem pendukung operasional." },
-                    { role: "QA Field — Senior Analyst", company: "PT Amartha Mikro Fintek", period: "2022 – 2024", desc: "Melakukan quality assurance operasional lapangan mencakup regional Sulawesi Tengah dan Sulawesi Utara." },
-                    { role: "Regional Manager", company: "PT Bina Artha Ventura", period: "2020 – 2021", desc: "Memimpin operasional regional perusahaan pembiayaan mikro." },
-                    { role: "Area Manager", company: "PT Bina Artha Ventura", period: "2019 – 2020", desc: "Mengawasi area Palu dan sekitarnya." },
-                    { role: "Branch Manager — Officer Development Program", company: "PT Bina Artha Ventura", period: "2017 – 2019", desc: "Bertugas di Makassar dan Poso melalui program pengembangan kepemimpinan." }
-                ],
-                skills: ["SQL", "Superset", "Python", "Pandas", "Google Sheets", "AppSheet", "Google Apps Script", "Quality Assurance", "Data Analysis", "Microfinance Operations"],
-                portfolios: [
-                    { title: "Dashboard Superset QA & Operasional", desc: "Membuat dashboard pemantauan anomali data dan performa lapangan secara real-time.", link: "#" },
-                    { title: "Automasi Laporan Python & Pandas", desc: "Skrip otomatisasi pengolahan data laporan harian untuk efisiensi tim analitik.", link: "#" },
-                    { title: "Sistem AppSheet Keuangan Mikro", desc: "Aplikasi pendukung operasional lapangan berbasis Google Workspace dan AppSheet.", link: "#" }
-                ]
-            };
         }
 
         document.getElementById('input-photo-file').addEventListener('change', function(e) {
@@ -139,7 +136,7 @@
         function updatePhotoPreview() {
             const previewImg = document.getElementById('preview-photo');
             const previewIcon = document.getElementById('preview-icon');
-            if (currentPhotoBase64) {
+            if (currentPhotoBase64 && currentPhotoBase64.trim() !== "") {
                 previewImg.src = currentPhotoBase64;
                 previewImg.classList.remove('hidden');
                 previewIcon.classList.add('hidden');
@@ -151,7 +148,7 @@
 
         document.getElementById('admin-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            const existingData = JSON.parse(localStorage.getItem('portfolioData')) || defaultDataValues();
+            const existingData = JSON.parse(localStorage.getItem('portfolioData')) || defaultDataValues;
 
             const updatedData = {
                 ...existingData,
