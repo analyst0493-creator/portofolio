@@ -12,7 +12,7 @@
     <!-- Navbar Responsif -->
     <nav class="bg-slate-800/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-700/80">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
-            <a href="#" id="nav-name" class="text-lg sm:text-xl font-bold text-cyan-400 tracking-tight">Musliadi</a>
+            <a href="#" class="text-lg sm:text-xl font-bold text-cyan-400 tracking-tight">Musliadi</a>
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -21,7 +21,6 @@
                 <a href="#skills" class="hover:text-cyan-400 transition">Keahlian</a>
                 <a href="#portfolio" class="hover:text-cyan-400 transition">Portofolio</a>
                 <a href="#contact" class="hover:text-cyan-400 transition">Kontak</a>
-                <a href="admin.html" class="bg-cyan-600 hover:bg-cyan-500 px-3 py-1.5 rounded-lg text-xs font-semibold transition flex items-center gap-1.5"><i class="fa-solid fa-lock text-[10px]"></i> Admin</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -37,29 +36,23 @@
             <a href="#skills" class="block text-slate-300 hover:text-cyan-400 transition py-1">Keahlian</a>
             <a href="#portfolio" class="block text-slate-300 hover:text-cyan-400 transition py-1">Portofolio</a>
             <a href="#contact" class="block text-slate-300 hover:text-cyan-400 transition py-1">Kontak</a>
-            <div class="pt-2 border-t border-slate-800">
-                <a href="admin.html" class="inline-flex items-center gap-1.5 bg-cyan-600 hover:bg-cyan-500 px-3 py-2 rounded-lg text-xs font-semibold text-slate-100 transition"><i class="fa-solid fa-lock text-[10px]"></i> Admin Dashboard</a>
-            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
         <div class="flex-1 text-center md:text-left">
-            <span id="hero-badge" class="bg-cyan-500/10 text-cyan-400 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full border border-cyan-500/20 inline-block mb-4">Senior Analyst - QA Data Support & System Improvement</span>
-            <h1 id="hero-title" class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-tight">Halo, Saya <span class="text-cyan-400">Musliadi</span></h1>
-            <p id="hero-tagline" class="text-base sm:text-lg text-slate-300 mb-6 sm:mb-8 max-w-xl mx-auto md:mx-0">Profesional Teknik Informatika dengan pengalaman sejak 2017 di bidang operasional keuangan mikro, quality assurance, dan analisis data menggunakan SQL, Superset, Python, dan Pandas.</p>
+            <span class="bg-cyan-500/10 text-cyan-400 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full border border-cyan-500/20 inline-block mb-4">Senior Analyst - QA Data Support & System Improvement</span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-tight">Halo, Saya <span class="text-cyan-400">Musliadi</span></h1>
+            <p class="text-base sm:text-lg text-slate-300 mb-6 sm:mb-8 max-w-xl mx-auto md:mx-0">Profesional Teknik Informatika dengan pengalaman sejak 2017 di bidang operasional keuangan mikro, quality assurance, dan analisis data menggunakan SQL, Superset, Python, dan Pandas.</p>
             <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4">
                 <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-cyan-500/20 text-center">Hubungi Saya</a>
                 <a href="#portfolio" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-xl transition border border-slate-700 text-center">Lihat Portofolio</a>
             </div>
         </div>
         <div class="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-cyan-500/30 shadow-2xl bg-slate-800 flex items-center justify-center shrink-0">
-            <img id="profile-img" src="" alt="Foto Profil" class="w-full h-full object-cover hidden">
-            <div id="profile-placeholder" class="text-slate-500 text-center p-4">
-                <i class="fa-solid fa-user text-4xl sm:text-6xl mb-2"></i>
-                <p class="text-[10px] sm:text-xs">Belum ada foto</p>
-            </div>
+            <!-- Masukkan nama file foto profil Anda di atribut src (contoh: foto.jpg) -->
+            <img src="" alt="Foto Profil Musliadi" class="w-full h-full object-cover">
         </div>
     </header>
 
@@ -67,7 +60,7 @@
     <section id="about" class="bg-slate-800/50 border-y border-slate-800 py-12 sm:py-16">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-3"><i class="fa-solid fa-user-tie text-cyan-400"></i> Tentang Saya</h2>
-            <p id="about-text" class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-4xl">
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-4xl">
                 Memiliki keahlian mendalam dalam manajemen kualitas data, deteksi anomali, otomatisasi laporan, serta pengembangan operasional keuangan mikro. Berbasis di Makassar, Indonesia, dengan rekam jejak kepemimpinan regional di berbagai perusahaan pembiayaan terkemuka.
             </p>
         </div>
@@ -76,21 +69,85 @@
     <!-- Pengalaman Kerja -->
     <section id="experience" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <h2 class="text-xl sm:text-2xl font-bold mb-8 sm:mb-10 flex items-center gap-3"><i class="fa-solid fa-briefcase text-cyan-400"></i> Pengalaman Kerja</h2>
-        <div id="experience-list" class="space-y-4 sm:space-y-6"></div>
+        <div class="space-y-4 sm:space-y-6">
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 shadow-lg">
+                <span class="text-[11px] sm:text-xs font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">2024 – Sekarang</span>
+                <h3 class="text-lg sm:text-xl font-bold mt-3 text-slate-100">QA Data Support & System Improvement — Senior Analyst</h3>
+                <h4 class="text-slate-400 text-sm sm:text-base font-medium mb-3">PT Amartha Mikro Fintek</h4>
+                <p class="text-slate-300 text-sm sm:text-base">Mengelola kualitas data, analisis anomali, serta peningkatan sistem pendukung operasional.</p>
+            </div>
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 shadow-lg">
+                <span class="text-[11px] sm:text-xs font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">2022 – 2024</span>
+                <h3 class="text-lg sm:text-xl font-bold mt-3 text-slate-100">QA Field — Senior Analyst</h3>
+                <h4 class="text-slate-400 text-sm sm:text-base font-medium mb-3">PT Amartha Mikro Fintek</h4>
+                <p class="text-slate-300 text-sm sm:text-base">Melakukan quality assurance operasional lapangan mencakup regional Sulawesi Tengah dan Sulawesi Utara.</p>
+            </div>
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 shadow-lg">
+                <span class="text-[11px] sm:text-xs font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">2020 – 2021</span>
+                <h3 class="text-lg sm:text-xl font-bold mt-3 text-slate-100">Regional Manager</h3>
+                <h4 class="text-slate-400 text-sm sm:text-base font-medium mb-3">PT Bina Artha Ventura</h4>
+                <p class="text-slate-300 text-sm sm:text-base">Memimpin operasional regional perusahaan pembiayaan mikro.</p>
+            </div>
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 shadow-lg">
+                <span class="text-[11px] sm:text-xs font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">2019 – 2020</span>
+                <h3 class="text-lg sm:text-xl font-bold mt-3 text-slate-100">Area Manager</h3>
+                <h4 class="text-slate-400 text-sm sm:text-base font-medium mb-3">PT Bina Artha Ventura</h4>
+                <p class="text-slate-300 text-sm sm:text-base">Mengawasi area Palu dan sekitarnya.</p>
+            </div>
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 shadow-lg">
+                <span class="text-[11px] sm:text-xs font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">2017 – 2019</span>
+                <h3 class="text-lg sm:text-xl font-bold mt-3 text-slate-100">Branch Manager — Officer Development Program</h3>
+                <h4 class="text-slate-400 text-sm sm:text-base font-medium mb-3">PT Bina Artha Ventura</h4>
+                <p class="text-slate-300 text-sm sm:text-base">Bertugas di Makassar dan Poso melalui program pengembangan kepemimpinan.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Keahlian -->
     <section id="skills" class="bg-slate-800/50 border-y border-slate-800 py-12 sm:py-16">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-3"><i class="fa-solid fa-code text-cyan-400"></i> Keahlian & Teknologi</h2>
-            <div id="skills-list" class="flex flex-wrap gap-2 sm:gap-3"></div>
+            <div class="flex flex-wrap gap-2 sm:gap-3">
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">SQL</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Superset</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Python</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Pandas</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Google Sheets</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">AppSheet</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Google Apps Script</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Quality Assurance</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Data Analysis</span>
+                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">Microfinance Operations</span>
+            </div>
         </div>
     </section>
 
     <!-- Portofolio -->
     <section id="portfolio" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <h2 class="text-xl sm:text-2xl font-bold mb-8 sm:mb-10 flex items-center gap-3"><i class="fa-solid fa-laptop-code text-cyan-400"></i> Portofolio & Proyek</h2>
-        <div id="portfolio-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 flex flex-col justify-between shadow-lg hover:border-cyan-500/50 transition">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-100 mb-2">Dashboard Superset QA & Operasional</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm mb-6">Membuat dashboard pemantauan anomali data dan performa lapangan secara real-time.</p>
+                </div>
+                <a href="#" target="_blank" class="text-cyan-400 text-xs sm:text-sm font-semibold flex items-center gap-2 hover:underline">Lihat Detail <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 flex flex-col justify-between shadow-lg hover:border-cyan-500/50 transition">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-100 mb-2">Automasi Laporan Python & Pandas</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm mb-6">Skrip otomatisasi pengolahan data laporan harian untuk efisiensi tim analitik.</p>
+                </div>
+                <a href="#" target="_blank" class="text-cyan-400 text-xs sm:text-sm font-semibold flex items-center gap-2 hover:underline">Lihat Detail <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+            <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 flex flex-col justify-between shadow-lg hover:border-cyan-500/50 transition">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-100 mb-2">Sistem AppSheet Keuangan Mikro</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm mb-6">Aplikasi pendukung operasional lapangan berbasis Google Workspace dan AppSheet.</p>
+                </div>
+                <a href="#" target="_blank" class="text-cyan-400 text-xs sm:text-sm font-semibold flex items-center gap-2 hover:underline">Lihat Detail <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+        </div>
     </section>
 
     <!-- Kontak -->
@@ -99,8 +156,8 @@
             <h2 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Tertarik Berkolaborasi?</h2>
             <p class="text-slate-400 text-sm sm:text-base mb-6 sm:mb-8 max-w-lg mx-auto">Hubungi saya melalui email atau LinkedIn untuk diskusi proyek atau kesempatan kerja sama.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4 text-sm sm:text-base">
-                <a id="contact-email" href="#" class="bg-slate-900 px-5 py-3 rounded-xl border border-slate-700 hover:border-cyan-500 transition flex items-center justify-center gap-2 truncate"><i class="fa-solid fa-envelope text-cyan-400"></i> <span id="email-text">email@example.com</span></a>
-                <a id="contact-linkedin" href="#" target="_blank" class="bg-slate-900 px-5 py-3 rounded-xl border border-slate-700 hover:border-cyan-500 transition flex items-center justify-center gap-2"><i class="fa-brands fa-linkedin text-cyan-400"></i> LinkedIn Profile</a>
+                <a href="mailto:musliadi@example.com" class="bg-slate-900 px-5 py-3 rounded-xl border border-slate-700 hover:border-cyan-500 transition flex items-center justify-center gap-2 truncate"><i class="fa-solid fa-envelope text-cyan-400"></i> <span>musliadi@example.com</span></a>
+                <a href="https://linkedin.com/in/musliadi" target="_blank" class="bg-slate-900 px-5 py-3 rounded-xl border border-slate-700 hover:border-cyan-500 transition flex items-center justify-center gap-2"><i class="fa-brands fa-linkedin text-cyan-400"></i> LinkedIn Profile</a>
             </div>
         </div>
     </section>
@@ -116,81 +173,6 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-
-        const defaultData = {
-            name: "Musliadi",
-            title: "Senior Analyst - QA Data Support & System Improvement",
-            tagline: "Profesional Teknik Informatika dengan pengalaman sejak 2017 di bidang operasional keuangan mikro, quality assurance, dan analisis data menggunakan SQL, Superset, Python, dan Pandas.",
-            about: "Memiliki keahlian mendalam dalam manajemen kualitas data, deteksi anomali, otomatisasi laporan, serta pengembangan operasional keuangan mikro. Berbasis di Makassar, Indonesia, dengan rekam jejak kepemimpinan regional di berbagai perusahaan pembiayaan terkemuka.",
-            email: "musliadi@example.com",
-            linkedin: "https://linkedin.com/in/musliadi",
-            photo: "",
-            experiences: [
-                { role: "QA Data Support & System Improvement — Senior Analyst", company: "PT Amartha Mikro Fintek", period: "2024 – Sekarang", desc: "Mengelola kualitas data, analisis anomali, serta peningkatan sistem pendukung operasional." },
-                { role: "QA Field — Senior Analyst", company: "PT Amartha Mikro Fintek", period: "2022 – 2024", desc: "Melakukan quality assurance operasional lapangan mencakup regional Sulawesi Tengah dan Sulawesi Utara." },
-                { role: "Regional Manager", company: "PT Bina Artha Ventura", period: "2020 – 2021", desc: "Memimpin operasional regional perusahaan pembiayaan mikro." },
-                { role: "Area Manager", company: "PT Bina Artha Ventura", period: "2019 – 2020", desc: "Mengawasi area Palu dan sekitarnya." },
-                { role: "Branch Manager — Officer Development Program", company: "PT Bina Artha Ventura", period: "2017 – 2019", desc: "Bertugas di Makassar dan Poso melalui program pengembangan kepemimpinan." }
-            ],
-            skills: ["SQL", "Superset", "Python", "Pandas", "Google Sheets", "AppSheet", "Google Apps Script", "Quality Assurance", "Data Analysis", "Microfinance Operations"],
-            portfolios: [
-                { title: "Dashboard Superset QA & Operasional", desc: "Membuat dashboard pemantauan anomali data dan performa lapangan secara real-time.", link: "#" },
-                { title: "Automasi Laporan Python & Pandas", desc: "Skrip otomatisasi pengolahan data laporan harian untuk efisiensi tim analitik.", link: "#" },
-                { title: "Sistem AppSheet Keuangan Mikro", desc: "Aplikasi pendukung operasional lapangan berbasis Google Workspace dan AppSheet.", link: "#" }
-            ]
-        };
-
-        function loadPortfolioData() {
-            const data = JSON.parse(localStorage.getItem('portfolioData')) || defaultData;
-
-            document.getElementById('nav-name').innerText = data.name;
-            document.getElementById('hero-badge').innerText = data.title;
-            document.getElementById('hero-title').innerHTML = `Halo, Saya <span class="text-cyan-400">${data.name}</span>`;
-            document.getElementById('hero-tagline').innerText = data.tagline;
-            document.getElementById('about-text').innerText = data.about;
-            document.getElementById('email-text').innerText = data.email;
-            document.getElementById('contact-email').href = `mailto:${data.email}`;
-            document.getElementById('contact-linkedin').href = data.linkedin;
-
-            const imgEl = document.getElementById('profile-img');
-            const placeholderEl = document.getElementById('profile-placeholder');
-            if (data.photo && data.photo.trim() !== "") {
-                imgEl.src = data.photo;
-                imgEl.classList.remove('hidden');
-                placeholderEl.classList.add('hidden');
-            } else {
-                imgEl.classList.add('hidden');
-                placeholderEl.classList.remove('hidden');
-            }
-
-            const expContainer = document.getElementById('experience-list');
-            expContainer.innerHTML = data.experiences.map(exp => `
-                <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 shadow-lg">
-                    <span class="text-[11px] sm:text-xs font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">${exp.period}</span>
-                    <h3 class="text-lg sm:text-xl font-bold mt-3 text-slate-100">${exp.role}</h3>
-                    <h4 class="text-slate-400 text-sm sm:text-base font-medium mb-3">${exp.company}</h4>
-                    <p class="text-slate-300 text-sm sm:text-base">${exp.desc}</p>
-                </div>
-            `).join('');
-
-            const skillsContainer = document.getElementById('skills-list');
-            skillsContainer.innerHTML = data.skills.map(skill => `
-                <span class="bg-slate-900 border border-slate-700 text-cyan-300 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-semibold shadow">${skill}</span>
-            `).join('');
-
-            const portContainer = document.getElementById('portfolio-list');
-            portContainer.innerHTML = data.portfolios.map(port => `
-                <div class="bg-slate-800 p-5 sm:p-6 rounded-2xl border border-slate-700 flex flex-col justify-between shadow-lg hover:border-cyan-500/50 transition">
-                    <div>
-                        <h3 class="text-base sm:text-lg font-bold text-slate-100 mb-2">${port.title}</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm mb-6">${port.desc}</p>
-                    </div>
-                    <a href="${port.link}" target="_blank" class="text-cyan-400 text-xs sm:text-sm font-semibold flex items-center gap-2 hover:underline">Lihat Detail <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
-                </div>
-            `).join('');
-        }
-
-        window.addEventListener('DOMContentLoaded', loadPortfolioData);
     </script>
 </body>
 </html>
